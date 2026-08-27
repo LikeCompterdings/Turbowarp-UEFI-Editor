@@ -1,0 +1,14 @@
+/* UEFI Editor - Hide unnecessary Scratch UI elements */
+/* Must use :global because webpack CSS modules is enabled */
+:global [class*="stage-wrapper_"] { display: none !important; }
+:global [class*="sprite-selector_"] { display: none !important; }
+:global [class*="stage-selector_"] { display: none !important; }
+:global [class*="stage-and-target-wrapper_"] { display: none !important; }
+:global [class*="gui_blocks-wrapper_"] { max-width: 100% !important; min-width: 100% !important; width: 100% !important; }
+:global [class*="gui_extension-button-container_"] {
+  pointer-events: none !important;
+  opacity: 0.35 !important;
+  filter: grayscale(1) !important;
+}
+:global [class*="react-tabs__tab-list"] > [role="tab"]:nth-child(2),
+:global [class*="react-tabs__tab-list"] > [role="tab"]:nth-child(3) { display: none !important; }
