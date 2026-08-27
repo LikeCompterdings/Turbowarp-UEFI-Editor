@@ -5,15 +5,15 @@
 
 ## 功能特性
 
-### 5 个 Scratch 扩展
+### 新功能
 
-| 扩展 | 名称 | 功能 |
-|------|------|------|
-| **ccoutput** | 编译 | 将 Scratch 项目编译为 C 代码 |
-| **efiop** | UEFI | 文本模式、固件服务、输入设备、内存管理、进程调度 |
-| **fileop** | 文件管理 | FAT32 文件系统操作、字符串处理 |
-| **uefisound** | 声音 | 蜂鸣器、音频播放 |
-| **pen** | 画笔 | 图形模式、像素绘制、矢量字体、BMP 渲染 |
+| 名称 | 功能 |
+|------|------|
+| 编译 | 将 Scratch 项目编译为 C 代码 |
+| UEFI | 文本模式、固件服务、输入设备、内存管理、进程调度 |
+| 文件管理 | FAT32 文件系统操作、字符串处理 |
+| 声音 | 蜂鸣器、音频播放 |
+| 画笔 | 图形模式、像素绘制、矢量字体、BMP 渲染 |
 
 ### 代码生成
 
@@ -66,13 +66,17 @@ c/qemu/.efi_boot/
 │   ├── BOOT  
 │      ├── BOOTX64.EFI 
 ```
+## 快速入门
 
-## 构建
+链接: https://pan.baidu.com/s/1f6bjuCqzUAG5KANfxDh1uA?pwd=TWUE 提取码: TWUE 
+
+## asar构建
 
 ### 前置要求
 
 - Node.js 16-18
 - npm
+- Clang
 
 ### 安装依赖
 
@@ -97,7 +101,6 @@ npm run webpack:prod
 ```bash
 npm run electron:start
 ```
-
 
 ## 许可证
 
